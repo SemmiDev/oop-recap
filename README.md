@@ -20,7 +20,7 @@ public class Person {
 
 }
 
-class Person {
+class Car {
 
 }
 ```
