@@ -5,7 +5,7 @@
 - Class & Object
 - Fields / Properties / Attributes
 - Method
-- Wrap
+- Recap
 
 ---
 
@@ -94,7 +94,7 @@ public class Person {
     System.out.println("Umur " + sammi.name " = " + sammi.getUmur());
 ```
 
-## Wrap
+## Recap
 
 ```java
 package com.sammidev;
