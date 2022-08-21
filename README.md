@@ -126,14 +126,12 @@ class Cart {
         }
 
         product.quantity -= quantity;
-        this.products.add(product);
+        for (int i = 1; i <= quantity; i++) this.products.add(product);
         return true;
     }
 
     double getTotalPrice() {
-        for (Product product : this.products) {
-            this.totalPrice += product.price;
-        }
+        this.products.forEach(product -> this.totalPrice += product.price);
         return this.totalPrice;
     }
 }
@@ -143,7 +141,7 @@ public class App {
         Product productA = new Product("Product A", 10, 20.000);
 
         Cart cart = new Cart();
-        boolean status =  cart.addToCart(productA, 5);
+        boolean status = cart.addToCart(productA, 5);
         if (status) {
             System.out.println("BERHASIL...");
         } else {
